@@ -1,0 +1,52 @@
+state,sentiment
+washington,-0.12
+delaware,-0.2
+district of columbia,0.7
+wisconsin,0.3
+west virginia,0.7
+hawaii,0.0
+florida,0.155555555556
+wyoming,0.0
+new hampshire,0.0
+new jersey,-0.1
+new mexico,-0.2
+texas,0.0380952380952
+louisiana,-0.0666666666667
+north carolina,0.48
+north dakota,0.0
+nebraska,0.9
+tennessee,-0.133333333333
+new york,0.0
+pennsylvania,-0.266666666667
+california,-0.0384615384615
+nevada,-0.35
+virginia,0.05
+colorado,0.0
+alaska,0.2
+alabama,-0.8
+arkansas,0.0
+vermont,0.0
+illinois,0.485714285714
+georgia,0.4
+indiana,-0.3
+iowa,-0.4
+massachusetts,0.4
+arizona,-0.4
+idaho,0.0
+connecticut,0.3
+maine,0.0
+maryland,1.0
+oklahoma,-0.733333333333
+ohio,0.04
+utah,-0.7
+missouri,0.8
+minnesota,0.6
+michigan,0.85
+rhode island,0.0
+kansas,1.0
+montana,0.0
+mississippi,0.0666666666667
+south carolina,-0.1
+kentucky,0.6
+oregon,0.0666666666667
+south dakota,-0.4
