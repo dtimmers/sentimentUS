@@ -22,11 +22,24 @@ class FileOperations:
     self.file.close()
 
 # See the README for how to get these credentials
-access_token_key = ""
-access_token_secret = ""
+def get_credentials():
+  f = open('twitterKeys.txt')
+  keys={}
+  for line in f:
+    t = line.split('=')
+    t[0] = t[0].strip().strip("'").strip('"')
+    t[1] = t[1].strip().strip("'").strip('"').rstrip('\n')
+    keys[t[0]] = t[1]
+
+  return keys
+
+cred = get_credentials()
+
+access_token_key = cred['access_token_key']
+access_token_secret = cred['access_token_secret']
  
-consumer_key = ""
-consumer_secret = ""
+consumer_key = cred['consumer_key']
+consumer_secret = cred['consumer_secret']
 
 _debug = 0
 
@@ -75,7 +88,7 @@ def fetchsamples(fh):
     fh.write_to_file(line.strip()+'\n')
 
 if __name__ == '__main__':
-  time_out = 20*60 #takes 20 minutes to download the tweets
+  time_out = 20*60 #take 20 minutes to download the tweets
   fn = sys.argv[1]
 
   fileHandler = FileOperations(fn)
