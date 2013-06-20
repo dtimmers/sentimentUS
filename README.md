@@ -12,7 +12,11 @@ To obtain the Twitter credentials do the following:</br>
 * Copy your "Consumer key" and your "Consumer secret" into twitterKeys.txt
 * Click "Create my access token."
 * Copy your "Access token" and your "Access secret" into twitterKeys.txt
-</br>
+
 After the credentials are se in twitterKeys.txt the program can be run by running the shell get_sentiment.sh (open a terminal and enter "sh get_sentiment.sh").</br>
 A sentiment plot of the US states will be shown and saved as "sentiment_plot.png".
+
+TODO:
+
+[-] Not only select tweets based on the 'place' field but also the geolocation in the 'coordinates' field (see https://dev.twitter.com/docs/platform-objects/tweets)
 
