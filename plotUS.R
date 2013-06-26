@@ -22,12 +22,12 @@ plotUSstates <- function()
   PrepareMaps();
   #load us map data
   states <- map_data("state");
-  state.info = data.frame(state.center, state.abb);
-  state.info = subset(state.info, !state.abb %in% c("AK", "HI"));
+  state.info <- data.frame(state.center, state.abb);
+  state.info <- subset(state.info, !state.abb %in% c("AK", "HI"));
   #load the sentiment score per state
-  sent_scores = read.csv("sent_scores",stringsAsFactors=FALSE);
+  sent_scores <- read.csv("sent_scores",stringsAsFactors=FALSE);
   #add sentiment scores to states
-  states$score = sent_scores$sentiment[match(states$region, sent_scores$state)];
+  states$score <- sent_scores$sentiment[match(states$region, sent_scores$state)];
   #cutting the state scores into bins
   states$bin <- cut(states$score, 5);
   states$bin <-factor(
